@@ -1,43 +1,99 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    background-color: #fddbb4;
+    margin: 0;
+    padding: 0 20px 100px;
+}
+
+header {
+    background-color: #c9492f;
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+#main-nav {
+    text-align: center;
 }
 
 nav ul {
     display: flex;
+    justify-content: flex-end;
     gap: 15px;
-    list-style: none;
-    padding: 0;
+    background-color: #e77a5f;
+    margin: 0;
+    padding: 10px 20px;
 }
 
 nav li a {
     text-decoration: none;
-    padding: 8px 12px;
-    color: #333;
-    background-color: #eee;
+    padding: 6px 10px;
+    color: white;
+    background-color: #bd4931;
     border-radius: 4px;
 }
 
 nav li a:hover {
-    background-color:#ccc;
+    background-color:#9d3b27;
 }
 
-.custom-btn {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1rem;
-    background-color: #0077C8;
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+.nav-btn {
+    background-color: #ff3e57;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 4px solid #00d9ff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
+.quote-card {
+    background-color: white;
+    border: 2px solid gray;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
 .audio-controls {
-    position: fixed;
-    bottom: 0;
-    background: #f5f5f5;
-    width: 100%;
-    padding: 10px;
-    border-top: 2px solid #ccc;
+    background-color: #006837;
+    color: white;
+    padding: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.audio-controls h3 {
+    margin-top: 0;
+}
+
+.audio-controls ul {
+    text-align: left;
+    margin: 10px 0 20px;
+}
+
+.audio-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
 }

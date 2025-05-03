@@ -1,10 +1,13 @@
 <html>
     <head>
-        <title>Assignment 2</title>
+        <title>INST377 - Activities</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav>
+        <header>
+            <h1>INST377 - Activities</h1>
+        </header>
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="stocks.html">Stocks</a></li>
@@ -13,22 +16,29 @@
         </nav>
 
         <main>
-            <h1>Welcome to Class Activities</h1>
-            <p id="quote">Loading quote...</p>
-            <button class="custom-btn" onclick="location.href='stocks.html'">Go to Stocks</button>
-            <button class="custom-btn" onclick="location.href='dogs.html'">Go to Dogs</button>
-        </main>
+            <h2>There are some different activities we can try!</h2>
+            <div class="button-group">
+                <button class="nav-btn" onclick="location.href='stocks.html'">Stocks</button>
+                <button class="nav-btn" onclick="location.href='dogs.html'">Dogs</button>
+            </div>
 
-        <div class="audio-controls">
-            <h3>Voice Commands:</h3>
-            <ul>
-                <li>say "Hello" -> Alerts Hello World</li>
-                <li>Say "Change the color to blue" -> Changes background</li>
-                <li>Say "Navigate to dogs" -> Goes to Dogs Page</li>
-            </ul>
-            <button onclick="annyang.start()">Turn on Audio</button>
-            <button onclick="annyang.abort()">Turn off Audio</button>
-        </div>
+            <div class="quote-card">
+                <h3>Quote of the Page Load</h3>
+                <p id="quote">Loading...</p>
+            </div>
+
+            <div class="audio-controls">
+                <h3>In this web page there are options to Navigate using Audio!</h3>
+                <p>Ensure your Mic is enabled to be able to use this feature</p>
+                <ul>
+                    <li>Navigate to a Different Page<br/>→ Say: <strong>Navigate to &lt;page&gt;</strong></li>
+                    <li>Change the Page Color<br/>→ Say: <strong>Change the color to &lt;color&gt;</strong></li>
+                    <li>Say Hello Back to you!<br/>→ Say: <strong>Hello</strong></li>
+                </ul>
+                <button class="audio-btn" onclick="annyang.start()">Turn on Listening</button>
+                <button class="audio-btn" onclick="annyang.abort()">Turn off Listening</button>
+            </div>
+        </main>
 
          <!-- Scripts -->
           <script src="libs/annyang.min.js"></script>

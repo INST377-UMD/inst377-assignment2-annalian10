@@ -1,7 +1,7 @@
 window.onload = async () => {
     const quoteEl = document.getElementById("quote");
     try {
-        const res = await fetch("https://zenquotes.io/api/random");
+        const res = await fetch("https://zenquotes.io/api/quotes/");
         const data = await res.json();
         quoteEl.textContent = `"${data[0].q}" - ${data[0].a}`;
      } catch (e) {
