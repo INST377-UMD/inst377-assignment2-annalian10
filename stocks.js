@@ -89,5 +89,9 @@ window.onload = () => {
         };
         annyang.addCommands(commands);
         annyang.start();
+
+        annyang.addCallBack('result', function(phrases) {
+            console.log("Recognized:", phrases);
+        });
     }
 };
