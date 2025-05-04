@@ -1,7 +1,7 @@
 const API_KEY = '4nx45IMZMBKQDSUC6L4vo0ynNv4_7VIV'
 
 function fetchStockData() {
-    const ticker = document.getElementById("tickerInput").ariaValueMax.toUpperCase();
+    const ticker = document.getElementById("tickerInput").value.toUpperCase();
     const days = document.getElementById("rangeSelect").value;
 
     const endDate = new Date();
@@ -54,7 +54,9 @@ function fetchRedditStocks() {
 
         top5.forEach(stock => {
             const sentiment = stock.sentiment.toLowerCase();
-            const icon = sentiment === "bullish" ? "🐂" : "🐻";
+            const icon = sentiment === "bullish" 
+            ? '<img src="bull-market.png" alt="Bullish" height="40">'
+            : '<img src="bear-market.png" alt="Bearish" height="40">';
 
             const row = document.createElement("tr");
             row.innerHTML = `

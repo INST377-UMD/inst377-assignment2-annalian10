@@ -23,7 +23,7 @@
                 <option value="60">60 Days</option>
                 <option value="90">90 Days</option>
             </select><br>
-            <button onclick="fetchStockData()">Lookup!</button><br>
+            <button class="green-btn" onclick="fetchStockData()">Lookup!</button><br>
 
             <canvas id="stockChart" width="400" height="200"></canvas>
 
@@ -56,6 +56,7 @@
         </main>
 
     <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
     <script src="stocks.js"></script>
     </body>
