@@ -16,4 +16,5 @@ if (annyang) {
         "navigate to *page": (page) => window.location.href = page.toLowerCase() + ".html"
     };
     annyang.addCommands(commands);
+    annyang.start();
 }
