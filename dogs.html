@@ -2,6 +2,8 @@
     <head>
         <title>INST377 - Assignment 2</title>
         <link rel="stylesheet" href="style.css">
+        <!--Simple Slider Carousel Library-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
     </head>
     <body>
         <header>
@@ -15,10 +17,34 @@
             </ul>
         </nav>
         <main>
-            <h2>Doggos!</h2>
-            <div id="dogContainer"></div>
-            
+            <h2>Doggos! 🐶</h2>
+            <div id="dogCarousel" class="slider"></div>
+
+            <h2>Dog Breeds</h2>
+            <div id="breedButtons" class="button-group"></div>
+
+            <div id="breedInfoContainer" style="display: none;">
+                <h3 id="breedName"></h3>
+                <p id="breedDesc"></p>
+                <p><strong>Lifespan:</strong> <span id="breedLife"></span></p>
+            </div>
+
+            <div class="audio-controls">
+                <h3>Voice Commands:</h3>
+                <p>Ensure your Mic is enabled to be able to use this feature.</p>
+                <ul>
+                  <li>Say <strong>"Hello"</strong> → Alerts "Hello World"</li>
+                  <li>Say <strong>"Change the color to blue"</strong> → Changes the background color</li>
+                  <li>Say <strong>"Navigate to home"</strong> → Navigates to the Home page</li>
+                  <li>Say <strong>"Load dog breed husky"</strong> </li>
+                </ul>
+                <button class="audio-btn" onclick="annyang.start()">Turn On Listening</button>
+                <button class="audio-btn" onclick="annyang.abort()">Turn Off Listening</button>
+              </div>
         </main>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+        <script src="dogs.js"></script>
 
     </body>
 </html>

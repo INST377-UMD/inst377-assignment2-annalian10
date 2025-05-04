@@ -248,3 +248,38 @@ input[type="text"], select {
     border-radius: 6px;
     cursor: pointer;
 }
+
+#dogsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+#dogImage {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+.carousel-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0077C8;
+}
+
+.red-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
